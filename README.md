@@ -63,9 +63,39 @@ Full DAX code is documented in the PBIX file's measure descriptions.
 - Power BI Desktop
 - Power Query (data cleaning, star schema modeling)
 - DAX (measures, calculated columns, time intelligence)
-
+  
 ## 💡 Key Insights
-- *("Emergency admissions show a higher average billing amount and shorter average length of stay compared to Elective admissions.")*
+
+- The dashboard covers **56,000 admissions** totaling **₹1.42 billion** in billing, 
+  with an average billing amount of **₹25.54K** per admission and an average 
+  length of stay of **15.5 days**.
+
+- Admissions are spread almost evenly across all six medical conditions 
+  (Arthritis, Diabetes, Hypertension, Obesity, Cancer, Asthma), each accounting 
+  for roughly 9,000-9,500 admissions — indicating no single condition dominates 
+  hospital load in this dataset.
+
+- Test results are split nearly evenly three ways: **33.6% Normal, 33.4% Abnormal, 
+  33.1% Inconclusive** — with no strong skew toward any single outcome.
+
+- Admission Type is similarly balanced: **Elective 33.6%, Emergency 33.5%, 
+  Urgent 32.9%** of total admissions, suggesting the hospital's caseload isn't 
+  concentrated in any one admission category.
+
+- Across all five insurance providers, billing is remarkably consistent — each 
+  provider accounts for roughly **20% of total admissions** (10,900-11,250 each) 
+  and a near-identical average billing amount (**₹25.4K-25.6K**), with **Cigna** 
+  handling the most admissions (11,249) and **Blue Cross** the highest per-patient 
+  average (₹25,613).
+
+- Total admissions and billing both show a sharp drop in **2024**, which reflects 
+  a partial year of data in the source dataset rather than an actual decline in 
+  hospital activity.
+
+- Average length of stay shows minimal variation across medical conditions 
+  (15.4-15.7 days), and billing amount shows no strong correlation with length 
+  of stay — consistent with this being a synthetically generated dataset rather 
+  than one reflecting real clinical cost drivers.
 
 ## 📂 Repository Contents
 - `healthcare_dashboard.pbix` — the full Power BI report file
